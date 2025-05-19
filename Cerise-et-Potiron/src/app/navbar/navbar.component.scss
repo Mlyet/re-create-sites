@@ -1,0 +1,108 @@
+/*
+    * Component: Navigation bar
+    * Create by : Thomas MEYET
+*/
+nav {
+    ul {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        list-style-type: none;
+        justify-content: center;
+    }
+        #rejoindre {
+            background-color: #fc5700;
+            color: white;
+            border-radius: 50em;
+            padding: 5px 1em;
+            border-style: none;
+        }
+        #find {
+            background-color: #449062;
+            color: white;
+            border-radius: 50em;
+            padding: 5px 1em;
+            border-style: none;
+        }
+        #find:hover, #rejoindre:hover {
+            padding: 0.5em 1.5em;
+            transition: all 250ms ease-out;
+            
+        }
+        #contact {
+            border-radius: 50em;
+            border: 1px solid white;
+            padding: 0.5em 1.5em;
+            background-color: transparent;
+        }
+    
+    img {
+        width: 6.875rem;
+    }
+}
+.otherPage {
+  display: inline-block;
+  position: relative;
+}
+
+.otherPage::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #55b829;
+  transition: transform 0.25s ease-out;
+}
+
+.otherPage:hover::after {
+  transform: scaleX(1);
+}
+
+.otherPage::after {
+  transform-origin: bottom right;
+}
+
+.otherPage:hover::after {
+  transform-origin: bottom left;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+div > div {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+h3 {
+  font-size: 18px;
+  width: 64px;
+  text-align: right;
+}
+
+/* Unrelated styles */
+:root {
+  font-size: 18px;
+}
+
+body {
+  height: 80vh;
+  line-height: 1.5;
+  font-family: Rnssanz medium, sans serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+}
